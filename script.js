@@ -1,4 +1,5 @@
 // Dados das linhas do metrô
+//prova finalizada
 const linesData = {
   azul: [
     { name: "Estação Central", status: "Normal" },
@@ -17,14 +18,26 @@ const linesData = {
   ],
 };
 
+const cssDict = {
+  "Normal": "normal",
+  "Manutenção": "manutenção",
+  "Inoperante": "inoperante"
+}
+
 // Função para atualizar as estações no DOM
 function updateStations(selectedLine, stationsContainer) {
-  // SEU CÓDIGO AQUI
+  selectedLine = document.getElementById("line-selector").value
+  stationsContainer = document.getElementById("stations-container")
+  stationsContainer.innerHTML = ``
+  for (key in linesData[selectedLine]){
+    stationsContainer.innerHTML += `<p class = "${cssDict[linesData[selectedLine][key]["status"]]}">${linesData[selectedLine][key]["name"]} - ${linesData[selectedLine][key]["status"]}</p>`
+  }
+    
 }
 
 // Função principal para adicionar eventos (executada no navegador)
 function initApp() {
-  // SEU CÓDIGO AQUI
+  lineSelector = document.getElementById("line-selector")
 }
 
 // Garantir que a função principal seja chamada apenas no navegador
