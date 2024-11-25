@@ -19,12 +19,23 @@ const linesData = {
 
 // Função para atualizar as estações no DOM
 function updateStations(selectedLine, stationsContainer) {
-  // SEU CÓDIGO AQUI
+    if (selectedLine == "azul"){
+      change
+      return azul
+    }
+    else if (selectedLine == "rosa"){
+      change
+      return rosa
+    }
+    else if (selectedLine == "lilas"){
+      change
+      return lilas
+    }
 }
 
 // Função principal para adicionar eventos (executada no navegador)
 function initApp() {
-  // SEU CÓDIGO AQUI
+    return selectedLine
 }
 
 // Garantir que a função principal seja chamada apenas no navegador
