@@ -19,12 +19,41 @@ const linesData = {
 
 // Função para atualizar as estações no DOM
 function updateStations(selectedLine, stationsContainer) {
-  // SEU CÓDIGO AQUI
+  if (selectedLine === "azul") {
+    document.createElement("azul")
+    document.createTextNode(
+      linesData[selectedLine][0]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][1]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][2]["name"] + "-" + linesData[selectedLine]["status"]
+    )
+    document.appendChild(stationsContainer)
+
+  } else if (selectedLine === "rosa") {
+    document.createElement("azul")
+    document.createTextNode(
+      linesData[selectedLine][0]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][1]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][2]["name"] + "-" + linesData[selectedLine]["status"]
+    )
+    document.appendChild(stationsContainer)
+  } else {
+    document.createElement("azul")
+    document.createTextNode(
+      linesData[selectedLine][0]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][1]["name"] + "-" + linesData[selectedLine]["status"],
+      linesData[selectedLine][2]["name"] + "-" + linesData[selectedLine]["status"]
+    )
+    document.appendChild(stationsContainer)
+  }
 }
 
 // Função principal para adicionar eventos (executada no navegador)
 function initApp() {
-  // SEU CÓDIGO AQUI
+  let select = document.getElementById("line-selector")
+  document.addEventListener('click', select)
+  let container = document.getElementById("stations-container")
+  document.addEventListener('change', container)
+  updateStations(select, container)
 }
 
 // Garantir que a função principal seja chamada apenas no navegador
