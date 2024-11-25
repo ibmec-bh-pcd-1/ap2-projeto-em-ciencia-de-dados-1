@@ -19,12 +19,22 @@ const linesData = {
 
 // Função para atualizar as estações no DOM
 function updateStations(selectedLine, stationsContainer) {
-  // SEU CÓDIGO AQUI
+  selectedLine = document.getElementById('line-selector');
+  let stationsContainer = document.getElementById ('stations-container');
+  const change = document.addEventListener ('on click', stationsContainer())
+  if (linesDate.azul === selectedLine[1]) {
+    console.log(selectedLine.azul);
+  } else if (selectedLine(rosa) === stationsContainer) {
+    console.log (selectedLine.rosa);
+  } else if (selectedLine(lilas)=== stationsContainer) {
+    console.log(selectedLine.lilas);
+  }
 }
 
 // Função principal para adicionar eventos (executada no navegador)
 function initApp() {
-  // SEU CÓDIGO AQUI
+  const change = document.addEventListener ('on click', updateStations()){
+  }
 }
 
 // Garantir que a função principal seja chamada apenas no navegador
