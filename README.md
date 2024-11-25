@@ -17,6 +17,8 @@ Você pode rodar o comando `npx cypress run` ao concluir para verificar os itens
 
 Durante a prova, o único site liberado é o deste repositório.
 
+**Siga à risca as instruções do enunciado para que os testes não falhem. Sua avaliação será realizadas pelos testes**.
+
 <hr>
 
 ## Ao terminar a sua prova:
@@ -30,6 +32,6 @@ Durante a prova, o único site liberado é o deste repositório.
 
 Você deve entregar **apenas** modificações nos arquivos `index.html` e `script.js`. Não é necessário alterar o arquivo `style.css`.
 
-Sua página deve ter este funcionamento:
+Sua página deve ter este funcionamento (além de passar nos testes automatizados):
 
 ![Resultado](./img/demo.gif)
