@@ -14,7 +14,8 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
+title{font-size: x-large;
+color: #2d3436;}
 .container {
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
