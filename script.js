@@ -20,6 +20,11 @@ const linesData = {
 // Função para atualizar as estações no DOM
 function updateStations(selectedLine, stationsContainer) {
   // SEU CÓDIGO AQUI
+  document.getElementById(stations-container).appendChild()
+  
+  
+  
+
 }
 
 // Função principal para adicionar eventos (executada no navegador)
