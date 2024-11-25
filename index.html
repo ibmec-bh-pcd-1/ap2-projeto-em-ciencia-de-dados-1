@@ -8,7 +8,18 @@
   </head>
   <body>
     <div class="container">
-      <!-- ESCREVA SEU CÓDIGO A PARTIR DESTA LINHA -->
+      <title>Linhas do Metrô</title>
+      <h1>Informações sobre Linhas do Metrô</h1>
+      <label for="linhas">Selecione uma linha:</label>
+      <select name="linhas" id="line-selector">
+        <option value="">--Escolha uma linha--</option>
+        <option value="azul" id="azul">Azul</option>
+        <option value="rosa" id="rosa">Rosa</option>
+        <option value="lilas" id="lilas">Lilás</option>
+      </select>
+      <div id="stations-container">
+        <p>Selecione uma linha para visualizar as estações.</p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
