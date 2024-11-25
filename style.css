@@ -13,9 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
 }
-
 
 .container {
   background-color: #fff;
@@ -110,16 +108,4 @@ select:focus {
   #stations-container p {
     font-size: 1rem;
   }
-}
-
-.normal {
-  color: rgb(4, 59, 4);
-}
-
-.manutencao {
-  color: rgb(255, 85, 0);
-}
-
-.inoperante {
-  color: rgb(255, 33, 33);
 }
