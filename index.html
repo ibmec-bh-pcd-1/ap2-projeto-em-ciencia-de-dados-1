@@ -6,10 +6,25 @@
     <title>Linhas do Metrô</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <!-- ESCREVA SEU CÓDIGO A PARTIR DESTA LINHA -->
+
+  <div class="container">
+    <body>
+
+    <h1>Linhas do Metrô</h1>
+
+    <label for="line-selector">Selecione uma linha para visualizar as estações:</label>
+    <select id="line-selector">
+        <option value="">- Escolha uma linha -</option>
+        <option value="azul">-Azul-</option>
+        <option value="rosa">-Rosa-</option>
+        <option value="lilas">-Lilás-</option>
+    </select>
+
+    <div id="stations-container">
+        Selecione uma linha: (Azul,Rosa,Lilás) para a visualização das estações.
     </div>
+      </div>
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
