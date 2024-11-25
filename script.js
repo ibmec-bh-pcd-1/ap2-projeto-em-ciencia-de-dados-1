@@ -1,40 +1,36 @@
-document.getElementById('line-selector').addEventListener('change', function() {
-  const line = this.value;
-  const stationsContainer = document.getElementById('stations-container');
-  
-  stationsContainer.innerHTML = '';
+// Dados das linhas do metrô
+const linesData = {
+  azul: [
+    { name: "Estação Central", status: "Normal" },
+    { name: "Estação Sul", status: "Manutenção" },
+    { name: "Estação Norte", status: "Inoperante" },
+  ],
+  rosa: [
+    { name: "Estação Jardim", status: "Normal" },
+    { name: "Estação Flor", status: "Normal" },
+    { name: "Estação Bela Vista", status: "Manutenção" },
+  ],
+  lilas: [
+    { name: "Estação Aurora", status: "Normal" },
+    { name: "Estação Cristal", status: "Inoperante" },
+    { name: "Estação Pérola", status: "Manutenção" },
+  ],
+};
 
-  if (line === '') {
+// Função para atualizar as estações no DOM
+function updateStations(selectedLine, stationsContainer) {
+  // SEU CÓDIGO AQUI
+}
 
-      stationsContainer.innerHTML = 'Selecione uma linha para visualizar as estações.';
-  } else {
-      let stations = [];
-      
-      if (line === 'azul') {
-          stations = [
-              { name: 'Estação Central- Normal', status: 'normal' },
-              { name: 'Estação Sul- Manutenção', status: 'manutencao' },
-              { name: 'Estação Norte- Inoperante ', status: 'inoperante' }
-          ];
-      } else if (line === 'rosa') {
-          stations = [
-              { name: 'Estação Jardim- Normal', status: 'normal' },
-              { name: 'Estação Flor- Normal ', status: 'normal' },
-              { name: 'Estação Bela Vista- Manutenção', status: 'manutencao' }
-          ];
-      } else if (line === 'lilas') {
-          stations = [
-              { name: 'Estação Aurora- Normal', status: 'normal' },
-              { name: 'Estação Cristal- Inoperante ', status: 'inoperante' },
-              { name: 'Estação Pérola- Manutenção ', status: 'manutencao' }
-          ];
-      }
-    
-      stations.forEach(station => {
-          const p = document.createElement('p');
-          p.textContent = station.name;
-          p.classList.add(station.status); 
-          stationsContainer.appendChild(p);
-      });
-  }
-});
+// Função principal para adicionar eventos (executada no navegador)
+function initApp() {
+  // SEU CÓDIGO AQUI
+}
+
+// Garantir que a função principal seja chamada apenas no navegador
+if (typeof window !== "undefined") {
+  document.addEventListener("DOMContentLoaded", initApp);
+}
+
+// Exportar dados e função para testes
+module.exports = { linesData, updateStations };
