@@ -6,7 +6,7 @@
 2. Faça o clone do repositório com `git clone`.
 3. Acesse a pasta que corresponde ao repositório clonado com `cd ap2-projeto-em-ciencia-de-dados-1`.
 4. Abra o Visual Studio Code na respectiva pasta do repositório.
-5. **Instale as dependências necessárias com o comando `npm install`, no terminal do Visual Studio Code.**
+5. ‼️ **Instale as dependências necessárias com o comando `npm install`, no terminal do Visual Studio Code.**
 6. Crie a sua branch com `nome-sobrenome` e responda as questões em sua branch. A branch main é somente leitura.
 
 <hr>
@@ -17,7 +17,7 @@ Você pode rodar o comando `npx cypress run` ao concluir para verificar os itens
 
 Durante a prova, o único site liberado é o deste repositório.
 
-**Siga à risca as instruções do enunciado para que os testes não falhem. Sua avaliação será realizadas pelos testes**.
+⚠️ **Siga à risca as instruções do enunciado para que os testes não falhem. Sua avaliação será realizada pelos testes**.
 
 <hr>
 
