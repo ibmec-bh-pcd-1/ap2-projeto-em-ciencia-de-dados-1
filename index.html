@@ -9,6 +9,20 @@
   <body>
     <div class="container">
       <!-- ESCREVA SEU CÓDIGO A PARTIR DESTA LINHA -->
+      <title>Linhas do Metrô</title>
+      <h1>Informações sobre Linhas do Metrô</h1>
+
+      <select name="" id="line-selector" onchange="updateStations()">
+        <option value=" ">-- Escolha uma linha --</option>
+        <option value="azul">Azul</option>
+        <option value="rosa">Rosa</option>
+        <option value="lilas">Lilas</option>
+      </select>
+
+      <div class="stations-container" id = "stations-container">
+        <p>Selecione uma linha para visualizar as estações</p>
+      </div>
+
     </div>
     <script src="script.js"></script>
   </body>

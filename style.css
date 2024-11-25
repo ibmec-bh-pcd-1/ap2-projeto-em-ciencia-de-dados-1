@@ -57,7 +57,7 @@ select:focus {
   border-color: #6c5ce7;
 }
 
-#stations-container {
+.stations-container {
   margin-top: 20px;
   background-color: #f1f2f6;
   border-radius: 8px;
@@ -65,7 +65,7 @@ select:focus {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#stations-container p {
+.stations-container p {
   font-size: 1.2rem;
   margin: 8px 0;
   padding: 5px;
